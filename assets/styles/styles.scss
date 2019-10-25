@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
 // === Variables =====
 $perspective:     60rem;
 $font-size:       5.25rem;
 $split-position:  49%;
 $split-thickness: 4px;
-$split-color:     #fbcfd0;
+$split-color:     #DCA587;
 
 // === Settings =====
 %font-settings {
-  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+  font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
