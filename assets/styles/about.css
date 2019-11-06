@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
+body, .contact-area, .contact, .contact main, .contact main section, .contact main section .content, .contact main section .content aside, .contact main section .content aside h1, .contact main section .content aside p {
+  font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+  text-align: center; }
+
+/* RESET
+========================================== */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg"); }
+
+/* CONTACT
+========================================== */
+.contact-area {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
+.contact {
+  position: relative;
+  max-width: 420px;
+  padding: 40px 20px;
+  overflow: hidden;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .contact {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); } }
+  .contact main {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 20px; }
+    .contact main section {
+      border-radius: 5px;
+      float: left;
+      width: 100%;
+      background-color: #825F6E; }
+      .contact main section .content {
+        float: left;
+        width: 100%;
+        padding: 20px 30px 50px 30px;
+        position: relative;
+        text-align: center; }
+        @media (min-width: 414px) {
+          .contact main section .content {
+            text-align: left; } }
+        .contact main section .content img {
+          display: inline-block;
+          width: 140px;
+          border-radius: 50%; }
+          @media (min-width: 414px) {
+            .contact main section .content img {
+              float: left;
+              width: 30%;
+              margin-right: 10%;
+              margin-top: 25%;
+              margin-bottom: 25%; } }
+        .contact main section .content aside {
+          float: left;
+          width: 100%;
+          color: #ffffff;
+          margin-top: 10px; }
+          @media (min-width: 414px) {
+            .contact main section .content aside {
+              width: 60%; } }
+          .contact main section .content aside h1 {
+            font-weight: 100;
+            font-size: 22px;
+            margin-bottom: 10px; }
+          .contact main section .content aside p {
+            font-size: 14px;
+            letter-spacing: .5px;
+            line-height: 160%; }
+    .contact main button {
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      background-color: #DCA587;
+      color: #825F6E;
+      border: 0;
+      width: 200px;
+      height: 48px;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 16px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: -24px;
+      margin-right: -100px;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      transition-delay: .1s;
+      outline: none;
+      overflow: hidden;
+      z-index: 10;
+      font-family: inherit; }
+
+/*# sourceMappingURL=about.css.map */

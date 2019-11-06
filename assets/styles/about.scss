@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+%font-settings {
+    font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-kerning: normal;
+    -webkit-text-size-adjust: 100%;
+    text-align: center;
+}
+
+$color-1: #825F6E;
+$color-2: #825F6E;
+$color-3: #DCA587;
+
+$white: #ffffff;
+$black: #000000;
+
+@mixin animation($animation) {
+  -webkit-animation: #{$animation};
+     -moz-animation: #{$animation};
+       -o-animation: #{$animation};
+          animation: #{$animation};
+}
+
+@mixin keyframes($keyframes) {
+  @-webkit-keyframes #{$keyframes} { @content; }
+     @-moz-keyframes #{$keyframes} { @content; }
+       @-o-keyframes #{$keyframes} { @content; }
+          @keyframes #{$keyframes} { @content; }
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: #{$transition};
+     -moz-transition: #{$transition};
+       -o-transition: #{$transition};
+          transition: #{$transition};
+}
+
+@mixin transition-delay($transition-delay) {
+  -webkit-transition-delay: #{$transition-delay};
+     -moz-transition-delay: #{$transition-delay};
+       -o-transition-delay: #{$transition-delay};
+          transition-delay: #{$transition-delay};
+}
+
+/* RESET
+========================================== */
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    @extend %font-settings;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg');
+}
+
+/* CONTACT
+========================================== */ 
+
+.contact-area {
+    @extend %font-settings;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.contact {
+    @extend %font-settings;
+  position: relative;
+  max-width: 420px;
+  padding: 40px 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+  
+  main {
+    @extend %font-settings;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    
+    section {
+        @extend %font-settings;
+      border-radius: 5px;
+      float: left;
+      width: 100%;
+      background-color: $color-1;
+      
+      .content {
+        @extend %font-settings;
+        float: left;
+        width: 100%;
+        padding: 20px 30px 50px 30px;
+        position: relative;
+        text-align: center;
+        
+        @media (min-width: 414px) {
+          text-align: left;
+        }
+
+        img {
+          display: inline-block;
+          width: 140px;
+          border-radius: 50%;
+          
+          @media (min-width: 414px) {
+            float: left;
+            width: 30%;
+            margin-right: 10%;
+            margin-top: 25%;
+            margin-bottom: 25%;
+          }
+        }
+
+        aside {
+            @extend %font-settings;
+          float: left;
+          width: 100%;
+          color: $white;
+          margin-top: 10px;
+          
+          @media (min-width: 414px) {
+            width: 60%;
+          }
+          
+          h1 {
+            @extend %font-settings;
+            font-weight: 100;
+            font-size: 22px;
+            margin-bottom: 10px;
+          }
+          
+          p {
+            @extend %font-settings;
+            font-size: 14px;
+            letter-spacing: .5px;
+            line-height: 160%;
+          }
+        }
+      }
+    }
+    
+    button {
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      background-color: $color-3;
+      color: $color-2;
+      border: 0;
+      width: 200px;
+      height: 48px;
+      text-align: center;
+      border-radius: 30px;
+      font-size: 16px;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: -24px;
+      margin-right: -100px;
+      @include transition(all .4s);
+      transition-delay: .1s;
+      outline: none;
+      overflow: hidden;
+      z-index: 10;
+      font-family: inherit;
+    }
+  }
+}
