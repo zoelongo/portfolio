@@ -13,12 +13,19 @@ html, body {
   width: 100%; }
 
 body {
-  color: #DCA587;
-  background: #8a5861; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg");
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #DCA587; }
 
 h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px #321853;
   color: #DCA587;
-  font-size: 3.25rem; }
+  font-size: 3.75rem; }
 
 * {
   margin: 0;
