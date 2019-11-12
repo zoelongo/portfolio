@@ -216,3 +216,25 @@ h1 {
       margin: 0 0 2rem 0;
     }
   }
+
+  #homeBtn {
+    cursor: grab;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #321853;
+    box-shadow: 0 0 20px #DCA587;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #AD857E 0%, #825F6E 51%, #321853 100%);
+  }
+  
+  #homeBtn:hover {
+    background-position: right center;
+    color: #DCA587;
+  }

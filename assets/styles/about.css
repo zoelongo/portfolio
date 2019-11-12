@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
-body, .contact-area, .contact, .contact main, .contact main section, .contact main section .content, .contact main section .content aside, .contact main section .content aside h1, .contact main section .content aside p {
+body {
   font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -8,91 +8,64 @@ body, .contact-area, .contact, .contact main, .contact main section, .contact ma
   -webkit-text-size-adjust: 100%;
   text-align: center; }
 
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg"); }
 
-.contact-area {
-  width: 100%;
-  height: 100vh;
-  position: relative; }
+.card {
+  border: 10px outset #DCA587;
+  background-color: #8a5861;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  height: 50%;
+  text-align: center;
+  font-family: arial; }
 
-.contact {
-  position: relative;
-  max-width: 420px;
-  padding: 40px 20px;
-  overflow: hidden;
-  margin: 0 auto; }
-  .contact main {
-    float: left;
-    width: 100%;
-    position: relative;
-    margin-top: 20px; }
-    .contact main section {
-      border-radius: 5px;
-      float: left;
-      width: 100%;
-      background-color: #8a5861; }
-      .contact main section .content {
-        float: left;
-        width: 100%;
-        padding: 20px 30px 50px 30px;
-        position: relative;
-        text-align: center; }
-        @media (min-width: 414px) {
-          .contact main section .content {
-            text-align: left; } }
-        .contact main section .content img {
-          display: inline-block;
-          width: 140px;
-          border-radius: 50%; }
-          @media (min-width: 414px) {
-            .contact main section .content img {
-              float: left;
-              width: 30%;
-              margin-right: 10%;
-              margin-top: 25%;
-              margin-bottom: 25%; } }
-        .contact main section .content aside {
-          float: left;
-          width: 100%;
-          color: #ffffff;
-          margin-top: 10px; }
-          @media (min-width: 414px) {
-            .contact main section .content aside {
-              width: 60%; } }
-          .contact main section .content aside h1 {
-            font-weight: 100;
-            font-size: 22px;
-            margin-bottom: 10px; }
-          .contact main section .content aside p {
-            font-size: 14px;
-            letter-spacing: .5px;
-            line-height: 160%; }
-    .contact main button {
-      cursor: grab;
-      position: absolute;
-      bottom: 0;
-      right: 50%;
-      background-color: #DCA587;
-      color: #8a5861;
-      border: 0;
-      width: 200px;
-      height: 48px;
-      text-align: center;
-      border-radius: 30px;
-      font-size: 16px;
-      letter-spacing: .5px;
-      text-transform: uppercase;
-      margin-bottom: -24px;
-      margin-right: -100px;
-      outline: none;
-      overflow: hidden;
-      z-index: 10;
-      font-family: inherit; }
+.title {
+  color: grey;
+  font-size: 18px; }
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px; }
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black; }
+
+button:hover, a:hover {
+  opacity: 0.7; }
+
+#homeBtn {
+  cursor: grab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #321853;
+  box-shadow: 0 0 20px #DCA587;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #AD857E 0%, #825F6E 51%, #321853 100%); }
+
+#homeBtn:hover {
+  background-position: right center;
+  color: #DCA587;
+  /* change the direction of the change here */ }
 
 /*# sourceMappingURL=about.css.map */
