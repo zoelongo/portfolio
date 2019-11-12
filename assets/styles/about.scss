@@ -17,6 +17,7 @@ body {
 
 
 .card {
+  @extend %font-settings;
   border: 10px outset #DCA587;
   background-color: #8a5861;
   border-radius: 15px;
@@ -30,17 +31,27 @@ body {
 }
 
 .title {
-  color: grey;
+  @extend %font-settings;
+  color: #DCA587;
   font-size: 18px;
 }
 
+.edu {
+  @extend %font-settings;
+}
+
+h1 {
+  @extend %font-settings;
+}
+
 button {
+  @extend %font-settings;
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
+  color: #8a5861;
+  background-color: #DCA587;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -48,6 +59,7 @@ button {
 }
 
 a {
+  @extend %font-settings;
   text-decoration: none;
   font-size: 22px;
   color: black;
@@ -58,6 +70,7 @@ button:hover, a:hover {
 }
 
 #homeBtn {
+  @extend %font-settings;
   cursor: grab;
   position: absolute;
   top: 0;
