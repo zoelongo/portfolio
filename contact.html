@@ -7,21 +7,36 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/contact.css">
     <link rel="shortcut icon" href="nonAnimatedMoon.ico" type="image/x-icon">
     <link rel="icon" href="animatedMoon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide%7CRoboto+Condensed" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
 
-        <div class="mailbg">
-            <label class="l1" for="mailinput">Your Email:</label>
-            <input class="mailinput" aria-label="Your Email" autocomplete="on" type="email" placeholder="">
-            <label class="l2" for="messtxt">Your Message:</label>
-            <textarea class="messtxt" aria-label="Your Message" placeholder=""></textarea>
-            <button class="sendmess" aria-label="Send message">Send<div class="bar"></div></button>
-            <div class="success">Message sent successfully.<br><br>Thanks!</div>
-            <button class="closemess" aria-label="Close Form">Close</div></button>
-        </div>
+    <div id="emailForm">
+        <form
+        action="https://formspree.io/xrggklap"
+        method="POST">
 
-    <script src="assets/contact.js"></script>
-    
+        <h2>Please contact me below! I would love to hear from you!</h2>
+
+        <label>
+          <p>Your email:   </p>
+          <input type="text" name="_replyto">
+        </label>
+
+        <label>
+          <p>Your message:   </p>   
+          <textarea name="message"></textarea>
+        </label>
+      
+        <button id="submitBtn" type="submit">Send</button>
+
+      </form>
+
+    </div>
+        
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/contact.js"></script>    -->
+
 </body>
 </html>
