@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 
+
 %font-settings {
 	font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
 	font-style: normal;
@@ -34,17 +35,28 @@ body {
   margin-top: 100px;
   margin-left: 175px;
   margin-right: 175px;
-  height: 60%;
+  height: 65%;
   border: 10px outset #DCA587;
   background-color: #8a5861;
+  border-radius: 15px;
+  
 }
 
 #submitBtn {
 	@extend %font-settings;
 	display: block;
 	margin: auto;
-	margin-top: 15px;
+	margin-top: 25px;
 	border: 5px outset #DCA587;
+	border-radius: 25px;
 	background-color: #DCA587; 
+}
 
+input, textarea {
+	@extend %font-settings;
+	border-radius: 25px;
+	padding: 1em;
+	height: 30%;
+	width: 30%;
+	
 }
