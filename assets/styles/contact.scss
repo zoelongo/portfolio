@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 
-
 %font-settings {
 	font-family: "Baloo Bhai", cursive, system-ui, sans-serif;
 	font-style: normal;
@@ -47,6 +46,7 @@ body {
   border-radius: 15px;
   
 }
+
 
 #submitBtn {
 	@extend %font-settings;
