@@ -19,6 +19,7 @@ body {
   max-width: 300px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   height: 50%;
   text-align: center;
   font-family: arial; }
@@ -26,6 +27,13 @@ body {
 .title {
   color: #DCA587;
   font-size: 18px; }
+
+.edu {
+  color: #321853; }
+
+h1 {
+  text-shadow: 3px 3px #321853;
+  color: #DCA587; }
 
 button {
   border: none;

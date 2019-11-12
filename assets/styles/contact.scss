@@ -26,9 +26,8 @@ body {
 html,
 body {
   width: 100vw;
-  height: 100vh; }
-
-
+  height: 100vh;
+}
 
 #emailForm {
 	@extend %font-settings;
@@ -37,15 +36,12 @@ body {
   padding: 10px;
   margin-top: 40px;
   margin-bottom: 50px;
-  // margin-left: 175px;
-  // margin-right: 175px;
   width: 50%;
   height: 88%;
   border: 10px outset #DCA587;
   background-color: #8a5861;
   border-radius: 15px;
 }
-
 
 #submitBtn {
   @extend %font-settings;
