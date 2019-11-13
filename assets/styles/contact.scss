@@ -58,6 +58,10 @@ body {
   height: 10%;
 }
 
+#submitBtn:hover {
+  opacity: 0.7;
+}
+
 input, textarea {
 	@extend %font-settings;
 	font-size: large;
