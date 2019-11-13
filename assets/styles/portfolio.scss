@@ -87,15 +87,15 @@ h1 {
       min-height: 280px;
       height: auto;
       border-radius: 10px;
-      color: #fff;
+      color: #DCA587;
       font-size: 1.5rem;
   }
   
   .back{
-    background: #cedce7;
-    background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-    background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
-    background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+    background: #AD857E;
+    background: -webkit-linear-gradient(45deg,  #AD857E 0%,#825F6E 100%);
+    background: -o-linear-gradient(45deg,  #AD857E 0%,#825F6E 100%);
+    background: linear-gradient(45deg,  #AD857E 0%,#825F6E 100%);
   }
   
   .front:after{
@@ -184,7 +184,7 @@ h1 {
     width: 4rem;
     height: 2px;
     position: absolute;
-    background: #C6D4DF;
+    background: #AD857E; //!!!
     display: block;
     left: 0;
     right: 0;
@@ -193,7 +193,7 @@ h1 {
   }
   
   .front .inner span{
-    color: rgba(255,255,255,0.7);
+    color: #DCA587;
     font-family: 'Montserrat';
     font-weight: 300;
   }
