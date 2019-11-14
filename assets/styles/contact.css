@@ -35,7 +35,8 @@ body {
   height: 88%;
   border: 10px outset #DCA587;
   background-color: #8a5861;
-  border-radius: 15px; }
+  border-radius: 15px;
+  overflow-y: scroll; }
 
 #submitBtn {
   color: #8a5861;
@@ -80,5 +81,10 @@ input, textarea {
   background-position: right center;
   color: #DCA587;
   /* change the direction of the change here */ }
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0; } }
 
 /*# sourceMappingURL=contact.css.map */
