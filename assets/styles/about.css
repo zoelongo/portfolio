@@ -36,6 +36,7 @@ h1 {
   color: #DCA587; }
 
 button {
+  cursor: grab;
   border: none;
   outline: 0;
   display: inline-block;

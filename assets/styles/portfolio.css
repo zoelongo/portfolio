@@ -13,16 +13,20 @@ html, body {
   width: 100%; }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg");
-  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg") fixed;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #DCA587; }
 
+header {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-top: 30px; }
+
 h1 {
-  margin-top: 20px;
-  margin-bottom: 30px;
   text-shadow: 3px 3px #321853;
   color: #DCA587;
   font-size: 3.75rem; }
@@ -34,9 +38,13 @@ h1 {
   box-sizing: border-box; }
 
 .wrapper {
+  overflow-y: scroll;
   width: 90%;
   margin: 0 auto;
   max-width: 80rem; }
+
+#mainWrap {
+  margin-top: 180px; }
 
 .cols {
   display: -webkit-box;
