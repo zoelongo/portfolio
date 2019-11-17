@@ -38,9 +38,7 @@ h1 {
   box-sizing: border-box; }
 
 .wrapper {
-  overflow-y: scroll;
   width: 90%;
-  margin: 0 auto;
   max-width: 80rem; }
 
 #mainWrap {
