@@ -18,11 +18,19 @@ html, body {
 body {
     @extend %font-settings;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.pixabay.com/photo/2015/01/08/15/48/city-593145_960_720.jpg') fixed;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center; 
     color: #DCA587;
     
+}
+
+header {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
 }
 
 h1 {
@@ -38,13 +46,16 @@ h1 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-
-// .wrapper {
-//   overflow: hidden;
-//   position: relative; 
-// }
+   
+  .wrapper{
+    width: 90%;
+   
+    max-width: 80rem;
+  }
   
-
+#mainWrap {
+  margin-top: 180px;
+}
 
   .cols{
     display: -webkit-box;
@@ -217,7 +228,7 @@ h1 {
 
   #homeBtn {
     cursor: grab;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     margin: 10px;
@@ -225,7 +236,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    // background-size: 200% auto;
+    background-size: 200% auto;
     color: #321853;
     box-shadow: 0 0 20px #DCA587;
     border-radius: 10px;
