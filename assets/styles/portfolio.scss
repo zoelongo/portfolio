@@ -241,6 +241,7 @@ h1 {
     box-shadow: 0 0 20px #DCA587;
     border-radius: 10px;
     background-image: linear-gradient(to right, #AD857E 0%, #825F6E 51%, #321853 100%);
+    z-index: 99;
   }
   
   #homeBtn:hover {
